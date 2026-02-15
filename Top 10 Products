@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Top product recommendations with links to each brand’s official website.">
+  <meta name="author" content="Lauren Leggio">
+  <title>Let’s Glow Girls | Top 10 Products</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Let’s Glow Girls</h1>
+  <p class="tagline">Top 10 Products</p>
+</header>
+
+<nav aria-label="Primary">
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="aftercare.html">Aftercare</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a class="active" href="top10.html">Top 10 Products</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="content">
+    <h2>Top 10 Product Recommendations</h2>
+    <p>
+      This page will include product recommendations sourced from each brand’s official website.
+      Each item will include an external link so visitors can view or purchase directly from the brand.
+    </p>
+
+    <img class="page-img" src="images/products.jpg" alt="Skincare product bottles on a clean background">
+
+    <h3>Example External Link</h3>
+    <p>
+      Brand website:
+      <a href="https://www.ulta.com" target="_blank" rel="noopener">Visit Ulta (External Link)</a>
+    </p>
+
+    <p class="note">
+      Product list will be finalized later. For now, this page shows the layout and linking method.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-grid">
+
+    <div>
+      <h3>Let’s Glow Girls</h3>
+      <p><strong>Phone Number:</strong> (000) 000-0000</p>
+      <p><strong>Address:</strong> 123 Beauty Lane, City, ST</p>
+      <p><strong>Business Hours:</strong> By Appointment Only</p>
+    </div>
+
+    <div>
+      <h3>Contact Us</h3>
+      <p>
+        Have questions?
+        <a href="contact.html">Contact Form</a>
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:lleggio@asu.edu">Email</a>
+      </p>
+    </div>
+
+    <div>
+      <h3>Social Media Links</h3>
+      <ul class="social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">TikTok</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <p class="copyright">
+    Copyright &copy; 2026 Let’s Glow Girls
+  </p>
+</footer>
+
+</body>
+</html>
