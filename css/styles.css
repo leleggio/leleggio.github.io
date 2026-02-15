@@ -1,22 +1,14 @@
-/* =========================
-   Let’s Glow Girls - Styles
-   ========================= */
-
-/* Color Variables */
 :root {
   --text: #87756c;
   --background: #F9EDE1;
   --primary: #FFCABE;   /* pink */
-  --secondary: #dbe499; /* green */
-  --accent: #fffae5;
+  --accent: #fffae5;    /* cream */
+  --brown: #b8a39a;     /* soft brown */
   --border: #d6c7bf;
   --white: #ffffff;
 }
 
-/* Global Reset */
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -26,20 +18,13 @@ body {
   color: var(--text);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+img { max-width: 100%; height: auto; display: block; }
 
-/* =========================
-   HEADER (PINK)
-   ========================= */
-
+/* Header */
 header {
   text-align: center;
   padding: 30px 15px;
-  background-color: var(--primary); /* solid pink */
+  background-color: var(--primary);
   border-bottom: 2px solid var(--border);
 }
 
@@ -53,10 +38,7 @@ header h1 {
   font-size: 1rem;
 }
 
-/* =========================
-   NAVIGATION
-   ========================= */
-
+/* Nav */
 nav {
   background-color: var(--accent);
   border-bottom: 2px solid var(--border);
@@ -79,22 +61,19 @@ nav {
   border-radius: 8px;
   border: 1px solid var(--border);
   background-color: var(--white);
-  transition: background-color 0.2s ease;
 }
 
 .nav-links a:hover {
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .nav-links a.active {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   font-weight: bold;
+  border: 2px solid var(--brown);
 }
 
-/* =========================
-   MAIN CONTENT
-   ========================= */
-
+/* Main content */
 main {
   max-width: 1000px;
   margin: 0 auto;
@@ -109,14 +88,29 @@ main {
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.content h2 {
+.section-card {
+  background-color: var(--accent);
+  border: 1px solid var(--border);
+  border-left: 8px solid var(--primary);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.section-card h3 {
   margin-top: 0;
 }
 
-/* =========================
-   TABLE
-   ========================= */
+.note {
+  background-color: var(--accent);
+  border: 1px solid var(--border);
+  border-left: 8px solid var(--brown);
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 16px;
+}
 
+/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -134,17 +128,10 @@ thead th {
   background-color: var(--accent);
 }
 
-/* =========================
-   FORM
-   ========================= */
+/* Form */
+form { margin-top: 16px; }
 
-form {
-  margin-top: 16px;
-}
-
-.form-row {
-  margin-bottom: 14px;
-}
+.form-row { margin-bottom: 14px; }
 
 label {
   display: block;
@@ -152,9 +139,7 @@ label {
   font-weight: bold;
 }
 
-input,
-select,
-textarea {
+input, select, textarea {
   width: 100%;
   padding: 10px;
   border-radius: 8px;
@@ -163,22 +148,45 @@ textarea {
 }
 
 .btn {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   border: 1px solid var(--border);
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
 }
 
 .btn:hover {
-  background-color: var(--primary);
+  background-color: var(--accent);
 }
 
-/* =========================
-   FOOTER (3 Columns)
-   ========================= */
+/* Products layout */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
 
+.product-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+  background-color: var(--white);
+}
+
+.product-img {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background-color: var(--accent);
+}
+
+.price {
+  font-weight: bold;
+  color: var(--text);
+}
+
+/* Footer */
 footer {
   margin-top: 40px;
   background-color: var(--accent);
@@ -194,19 +202,10 @@ footer {
   gap: 30px;
 }
 
-.footer-grid h3 {
-  margin-top: 0;
-}
+.footer-grid h3 { margin-top: 0; }
 
-.social {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.social li {
-  margin-bottom: 6px;
-}
+.social { list-style: none; padding: 0; margin: 0; }
+.social li { margin-bottom: 6px; }
 
 footer a {
   color: var(--text);
@@ -214,9 +213,7 @@ footer a {
   text-decoration: none;
 }
 
-footer a:hover {
-  text-decoration: underline;
-}
+footer a:hover { text-decoration: underline; }
 
 .copyright {
   text-align: center;
@@ -224,15 +221,9 @@ footer a:hover {
   font-size: 0.95rem;
 }
 
-/* =========================
-   RESPONSIVE DESIGN
-   ========================= */
-
+/* Responsive */
 @media (max-width: 700px) {
-
-  header h1 {
-    font-size: 1.6rem;
-  }
+  header h1 { font-size: 1.6rem; }
 
   .nav-links a {
     width: 100%;
@@ -244,4 +235,7 @@ footer a:hover {
     text-align: center;
   }
 
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
 }
