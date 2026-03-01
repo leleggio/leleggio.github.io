@@ -3,19 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Contact Let’s Glow Girls to ask questions or inquire about facials, waxing, brow lamination, and lash services.">
+<meta name="keywords" content="Let’s Glow Girls contact, esthetics appointment, facial inquiry, waxing inquiry, brow services, lash services">
+
 <title>Let’s Glow Girls | Contact</title>
 <link rel="stylesheet" href="css/styles.css">
-</head>
 
-  <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8LM14QEJWQ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-8LM14QEJWQ');
 </script>
+
+</head>
 
 <body>
 
@@ -39,37 +43,69 @@
 <h2>Contact Form</h2>
 
 <form action="#" method="post">
+
 <div class="form-row">
-<label>Name:</label>
-<input type="text" required>
+<label for="name">Name:</label>
+<input type="text" id="name" name="fullName" required>
 </div>
 
 <div class="form-row">
-<label>Email:</label>
-<input type="email" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
 </div>
 
 <div class="form-row">
-<label>Service of Interest:</label>
-<select required>
+<label for="service">Service of Interest:</label>
+<select id="service" name="serviceInterest" required>
 <option value="">Select</option>
-<option>Facial</option>
-<option>Brows</option>
-<option>Lashes</option>
-<option>Waxing</option>
+<option value="facial">Facial</option>
+<option value="brows">Brows</option>
+<option value="lashes">Lashes</option>
+<option value="waxing">Waxing</option>
 </select>
 </div>
 
 <div class="form-row">
-<label>Message:</label>
-<textarea rows="5" required></textarea>
+<label for="message">Message:</label>
+<textarea id="message" name="clientMessage" rows="5" required></textarea>
 </div>
 
 <input class="btn" type="submit" value="Submit">
+
 </form>
 
 </section>
 </main>
 
 <footer>
-<!-- same footer -->
+  <div class="footer-grid">
+
+    <div>
+      <h3>Let’s Glow Girls</h3>
+      <p><strong>Phone Number:</strong> (000) 000-0000</p>
+      <p><strong>Address:</strong> 123 Beauty Lane, City, ST</p>
+      <p><strong>Business Hours:</strong> By Appointment Only</p>
+    </div>
+
+    <div>
+      <h3>Contact Us</h3>
+      <p><a href="contact.html">Contact Form</a></p>
+      <p><a href="mailto:lleggio@asu.edu">Email</a></p>
+    </div>
+
+    <div>
+      <h3>Social Media Links</h3>
+      <ul class="social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">TikTok</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <p class="copyright">Copyright &copy; 2026 Let’s Glow Girls</p>
+</footer>
+
+</body>
+</html>
