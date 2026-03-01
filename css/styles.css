@@ -221,6 +221,29 @@ footer a:hover { text-decoration: underline; }
   font-size: 0.95rem;
 }
 
+/* Homepage video + text side-by-side */
+.home-flex {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.home-video {
+  flex: 0 0 420px; /* fixed column so text stays on the right */
+}
+
+.spa-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.home-text {
+  flex: 1;
+}
+
 /* Responsive */
 @media (max-width: 700px) {
   header h1 { font-size: 1.6rem; }
@@ -237,5 +260,15 @@ footer a:hover { text-decoration: underline; }
 
   .products-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Stack homepage on small screens only */
+  .home-flex {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .home-video {
+    flex: 1;
   }
 }
